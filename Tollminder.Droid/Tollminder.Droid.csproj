@@ -347,7 +347,6 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\values\dimens.xml" />
-    <AndroidResource Include="Resources\drawable-hdpi\.DS_Store" />
     <AndroidResource Include="Resources\drawable-hdpi\home_background.png" />
     <AndroidResource Include="Resources\drawable-hdpi\home_logo.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_home_pay.png" />
@@ -356,7 +355,6 @@
     <AndroidResource Include="Resources\drawable-hdpi\ic_home_support.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_home_tracking_active.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_home_tracking_default.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\.DS_Store" />
     <AndroidResource Include="Resources\drawable-mdpi\home_background.png" />
     <AndroidResource Include="Resources\drawable-mdpi\home_logo.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_home_pay.png" />
@@ -365,7 +363,6 @@
     <AndroidResource Include="Resources\drawable-mdpi\ic_home_support.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_home_tracking_active.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_home_tracking_default.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\.DS_Store" />
     <AndroidResource Include="Resources\drawable-xhdpi\home_background.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\home_logo.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_home_pay.png" />
@@ -374,7 +371,6 @@
     <AndroidResource Include="Resources\drawable-xhdpi\ic_home_support.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_home_tracking_active.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_home_tracking_default.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\.DS_Store" />
     <AndroidResource Include="Resources\drawable-xxhdpi\home_background.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\home_logo.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_home_pay.png" />
