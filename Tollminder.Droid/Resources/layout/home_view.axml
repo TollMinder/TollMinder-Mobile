@@ -6,25 +6,21 @@
     android:layout_height="match_parent"
     android:background="@drawable/home_background"
     android:orientation="vertical">
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/button_container"
         android:layout_alignParentTop="true">
-
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:src="@drawable/home_logo" />
     </RelativeLayout>
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true">
-
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -32,7 +28,6 @@
             android:layout_centerHorizontal="true"
             android:paddingBottom="10dp"
             android:src="@drawable/ic_home_support" />
-
         <TextView
             android:id="@+id/support_text"
             android:layout_width="wrap_content"
@@ -45,7 +40,6 @@
             app:MvxBind="Text SupportText"
             tools:text="Call Center:\n+(1) 305 335 85 08" />
     </RelativeLayout>
-
     <RelativeLayout
         android:id="@+id/button_container"
         android:layout_width="match_parent"
@@ -54,29 +48,24 @@
         android:layout_alignParentStart="true"
         android:paddingBottom="60dp"
         android:layout_centerVertical="true">
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:orientation="horizontal">
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="15dp"
                 android:orientation="vertical">
-
                 <tollminder.droid.controls.RoundedRectangleButton
                     android:layout_width="@dimen/home_button_fringe"
                     android:layout_height="@dimen/home_button_fringe"
                     android:layout_marginBottom="15dp"
-                    app:MvxBind="Click TrackingCommand; ImageUrl BoolToIconConverter(IsBound, 'ic_home_tracking')"
+                    app:MvxBind="Click TrackingCommand; ImageUrl BoolToIconConverter(IsBound, 'ic_home_tracking'); Text TrackingText"
                     app:image="@drawable/ic_home_tracking_default"
-                    app:text="Tracking is On"
                     tools:background="@drawable/home_view_button_background" />
-
                 <tollminder.droid.controls.RoundedRectangleButton
                     android:layout_width="@dimen/home_button_fringe"
                     android:layout_height="@dimen/home_button_fringe"
@@ -85,12 +74,10 @@
                     app:text="Pay"
                     tools:background="@drawable/home_view_button_background" />
             </LinearLayout>
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
                 <tollminder.droid.controls.RoundedRectangleButton
                     android:layout_width="@dimen/home_button_fringe"
                     android:layout_height="@dimen/home_button_fringe"
@@ -99,7 +86,6 @@
                     app:image="@drawable/ic_home_profile"
                     app:text="Profile"
                     tools:background="@drawable/home_view_button_background" />
-
                 <tollminder.droid.controls.RoundedRectangleButton
                     android:layout_width="@dimen/home_button_fringe"
                     android:layout_height="@dimen/home_button_fringe"

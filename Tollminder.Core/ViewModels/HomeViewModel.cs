@@ -22,6 +22,8 @@ namespace Tollminder.Core.ViewModels
 		readonly IGeoLocationWatcher _geoWatcher;
 
 		IList<MvxSubscriptionToken> _tokens;
+
+
         public HomeViewModel(IMvxMessenger messenger, ITrackFacade track, IGeoLocationWatcher geoWatcher, IStoredSettingsService storedSettingsService)
         {
             _messenger = messenger;
@@ -32,12 +34,16 @@ namespace Tollminder.Core.ViewModels
             _tokens = new List<MvxSubscriptionToken>();
         }
 
-		public override void Start ()
-		{
-			base.Start ();
+		public override void Start()
+        {
+            base.Start();
 
             Task.Run(RefreshToolRoads);
-		}
+
+            _tokens.Add(_messenger.SubscribeOnMainThread<GeoWatcherStatusMessage>((s) => IsBound = s.Data, MvxReference.Strong));
+
+            IsBound = _geoWatcher.IsBound;
+        }
 
 		Task RefreshToolRoads()
         {
@@ -51,15 +57,13 @@ namespace Tollminder.Core.ViewModels
             set 
             { 
                 SetProperty(ref _isBound, value);
-                TrackingText = value ? "Tracking is On" : "Tracking is Off";
+                RaisePropertyChanged(() => TrackingText);
             }
         }
 
-        string _trackingText = "Tracking is Off";
         public string TrackingText
         {
-            get { return _trackingText; }
-            set { SetProperty(ref _trackingText, value); }
+            get { return IsBound ? "Tracking is On" : "Tracking is Off"; }
         }
 
         MvxCommand _trackingCommand;
